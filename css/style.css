@@ -155,8 +155,10 @@ header {
 
 .hero-image img {
     max-width: 100%;
-    flex-grow: 1; /* Allow image to take remaining space */
+    flex-grow: 1; 
 }
+
+/* Hero Ends */
 
 
 /* Stats Hero Section */
@@ -166,7 +168,7 @@ header {
     flex-direction: column;
     gap: 2rem;
     z-index: 2;
-    flex-shrink: 0;  /* Prevent container from shrinking */
+    flex-shrink: 0;  
   
 }
 
@@ -183,26 +185,20 @@ header {
 }
 
 
-
 .stats.rating i {
     color: yellow;
     margin-inline: 0.3rem;
 }
+
+/* Stats Ending */
+
+
 
 /* Media queries for responsiveness */
 @media (max-width: 992px) {
 
     .hero {
         grid-template-columns: 1fr;
-    }
-
-    .stats.enrol {
-        left: 10%;
-    }
-    
-    .stats.rating {
-        left: 10%;
-   
     }
 }
 
