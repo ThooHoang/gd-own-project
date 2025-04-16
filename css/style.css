@@ -194,6 +194,92 @@ header {
 
 
 
+/* Testimonials */
+.testimonials-container {
+    display: flex;
+    gap: 6rem;
+    padding: 3rem;
+    position: relative;
+    margin: 5rem;
+}
+
+.testimonials-container::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    top: -2px;
+    left: 10%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #023047;
+    z-index: -1; /* This negative z-index ensures it's behind positive z-index elements */
+}
+
+.testimonials {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 2rem;
+    z-index: 2; /* Higher z-index than the bar */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 9px 36px 0px #00000033;
+    border-radius: 24px;
+    background-color: white; /* Add a background color to ensure opacity */
+    position: relative;
+    z-index: 2; /* Higher z-index than the bar */
+}
+
+.testimonial-person {
+    padding: 24px 32px;
+    font-family: var(--raleway);
+    display: flex;
+    z-index: 9;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial-person h3 {
+    font-weight: 900;
+    font-size: 1.45rem;
+    color: var(--army-blue);
+}
+
+.testimonial-person p {
+    font-weight: 400;
+    
+}
+
+.testimonial-person img {
+    margin-top: -30px;
+}
+
+.purple-box, .orange-box {
+    padding: 24px 32px;
+    color: var(--light);
+    font-weight: 900;
+    font-family: var(--raleway);
+    font-size: 1rem;
+    border-radius: 24px;
+    /* Remove position and z-index here */
+}
+
+.purple-box {
+    background-color: var(--light-blue);
+}
+
+.second {
+    margin-left: 2rem;
+}
+
+.orange-box {
+    background-color: var(--orange);
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 992px) {
 
